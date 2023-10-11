@@ -11,18 +11,13 @@
 #' @return Devuelve una tabla con los resultados
 #'
 #' @examples
-#' mydata <-
-#'   data.frame(cvegeo = c("01", "02", "03", "04", "05"),
-#'              area_name = c("area_1", "area_2", "area_3", "area_4", "area_5"),
-#'              population = c(749982, 400161, 417416, 60847, 199224),
-#'              concentration = c(21.8, 25.8, 24.5, 21.6, 17.7),
-#'              cases = c(4070, 3004, 2959, 4038, 806))
+#' data(hia_data)
 #'
 #' ## Usando valores por default
-#' hia_pm25(mydata, cf = 10)
+#' hia_pm25(hia_data, cf = 10)
 #'
 #' ## Especificando una distinta FCR
-#' hia_pm25(mydata, uc = 10, cf = 12, fcr.low = 1.040, fcr.mean = 1.062, fcr.high = 1.083)
+#' hia_pm25(hia_data, uc = 10, cf = 12, fcr.low = 1.040, fcr.mean = 1.062, fcr.high = 1.083)
 #'
 #' @export
 #'
