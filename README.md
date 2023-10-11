@@ -4,6 +4,8 @@
 # HIAestim
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/texcalac/HIAestim/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/texcalac/HIAestim/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 El objetivo del paquete **HIAestim** es facilitar las estimaciones de
@@ -37,27 +39,6 @@ library(HIAestim)
 
 ``` r
 data(hia_data)
-```
-
-``` r
-hia_data
-#>    cvegeo area_name population concentration cases
-#> 1     001   area_01     749982          21.8  4070
-#> 2     002   area_02     400161          25.8  3004
-#> 3     003   area_03     417416          24.5  2959
-#> 4     004   area_04     608479          21.6  4038
-#> 5     005   area_05     199224          17.7   806
-#> 6     006   area_06     532553          26.6  4223
-#> 7     007   area_07    1164477          27.7  7944
-#> 8     008   area_08     390348          22.2  2822
-#> 9     009   area_09    1827868          22.6  9232
-#> 10    010   area_10     243886          20.1  1275
-#> 11    011   area_11     364439          24.8  2566
-#> 12    012   area_12     137927          22.9   604
-#> 13    013   area_13     361593          22.6  1470
-#> 14    014   area_14     677104          20.1  3199
-#> 15    015   area_15     427263          26.2  3146
-#> 16    016   area_16     415933          20.2  2074
 ```
 
 3.  Calculamos los casos atribuíbles usando valores por default

@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # HIAestim
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/texcalac/HIAestim/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/texcalac/HIAestim/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 El objetivo del paquete **HIAestim** es facilitar las estimaciones de casos atribuibles en el marco de una Evaluación de impacto en salud.
