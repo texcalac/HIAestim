@@ -43,17 +43,8 @@ library(HIAestim)
 
 2. Cargamos la malla de datos de ejemplo
 
-```{r echo=FALSE}
-hia_data <-
-  data.frame(cvegeo = c("01", "02", "03", "04", "05"),
-             area_name = c("area_1", "area_2", "area_3", "area_4", "area_5"),
-             population = c(749982, 400161, 417416, 60847, 199224),
-             concentration = c(21.8, 25.8, 24.5, 21.6, 17.7),
-             cases = c(4070, 3004, 2959, 4038, 806))
-```
-
 ```{r}
-hia_data
+data(hia_data)
 ```
 
 3. Calculamos los casos atribuíbles usando valores por default
