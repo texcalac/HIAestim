@@ -29,7 +29,7 @@ Usted podrá instalar la última versión del paquete **HIAestim** siguiendo las
 
 ``` r
 # install.packages("devtools")
-devtools::instal_github("texcalac/HIAestim")
+devtools::install_github("texcalac/HIAestim")
 ```
 
 ## Ejemplo

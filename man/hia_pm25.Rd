@@ -2,8 +2,7 @@
 % Please edit documentation in R/hia_pm25.R
 \name{hia_pm25}
 \alias{hia_pm25}
-\title{Esta función realiza la estimación de casos atribuíbles a la exposición a
-contaminantes del aire}
+\title{Esta función realiza la estimación de casos atribuíbles a la exposición a PM2.5}
 \usage{
 hia_pm25(x, uc = 10, cf, fcr.low = 1.06, fcr.mean = 1.08, fcr.high = 1.09)
 }
@@ -21,11 +20,10 @@ hia_pm25(x, uc = 10, cf, fcr.low = 1.06, fcr.mean = 1.08, fcr.high = 1.09)
 \item{fcr.high}{Valor Superior de la FCR. Por defecto el valor es 1.09.}
 }
 \value{
-Devuelve una tabla con los resultados
+Devuelve una tabla con los resultados.
 }
 \description{
-Esta función realiza la estimación de casos atribuíbles a la exposición a
-contaminantes del aire
+Esta función realiza la estimación de casos atribuíbles a la exposición a PM2.5
 }
 \examples{
 data(hia_data)

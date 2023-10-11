@@ -22,7 +22,7 @@ siguiendo las indicaciones que a continuación se le muestran:
 
 ``` r
 # install.packages("devtools")
-devtools::instal_github("texcalac/HIAestim")
+devtools::install_github("texcalac/HIAestim")
 ```
 
 ## Ejemplo
