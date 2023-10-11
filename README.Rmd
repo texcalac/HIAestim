@@ -1,0 +1,76 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# HIAestim
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+El objetivo del paquete **HIAestim** es facilitar las estimaciones de casos atribuibles en el marco de una Evaluación de impacto en salud.
+
+Los datos contenidos son ficticios y sólo pretenden mostrar la estructura de la malla de datos y el formato requerido para cada variable.
+
+## Instalación
+
+Usted podrá instalar la última versión del paquete **HIAestim** siguiendo las indicaciones que a continuación se le muestran:
+
+``` r
+# install.packages("devtools")
+devtools::instal_github("texcalac/HIAestim")
+```
+
+## Ejemplo
+
+Este es un ejemplo básico del funcionamiento del paquete.
+
+1. Active el paquete en su sesión
+
+```{r load_library}
+library(HIAestim)
+```
+
+2. Cargamos la malla de datos de ejemplo
+
+```{r echo=FALSE}
+hia_data <-
+  data.frame(cvegeo = c("01", "02", "03", "04", "05"),
+             area_name = c("area_1", "area_2", "area_3", "area_4", "area_5"),
+             population = c(749982, 400161, 417416, 60847, 199224),
+             concentration = c(21.8, 25.8, 24.5, 21.6, 17.7),
+             cases = c(4070, 3004, 2959, 4038, 806))
+```
+
+```{r}
+hia_data
+```
+
+3. Calculamos los casos atribuíbles usando valores por default
+
+```{r ejem_pm25_simple}
+hia_pm25(hia_data, cf = 10)
+
+```
+
+4. Calculamos los casos atribuíbles especificando una distinta FCR
+
+```{r ejem_pm25_complex}
+hia_pm25(hia_data, uc = 10, cf = 12, fcr.low = 1.040, fcr.mean = 1.062, fcr.high = 1.083)
+
+```
+
+Puede exportar sus estimaciones para agregarlas a la escala que se requiera.
+
+
+
