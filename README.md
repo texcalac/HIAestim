@@ -15,6 +15,16 @@ Los datos contenidos son ficticios y sólo pretenden mostrar la
 estructura de la malla de datos y el formato requerido para cada
 variable.
 
+El paquete contiene funciones que llevan la misma estructura para su
+ejecución, es posible utilizar funciones para calculos con datos de
+PM2.5, PM10 y Ozono.
+
+**`hia_pm25`** Ejecuta estimaciones para PM2.5
+
+**`hia_pm10`** Ejecuta estimaciones para PM10
+
+**`hia_ozono`** Ejecuta estimaciones para Ozono
+
 ## Instalación
 
 Usted podrá instalar la última versión del paquete **HIAestim**
